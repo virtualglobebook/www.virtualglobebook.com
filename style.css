@@ -1,0 +1,13 @@
+body { 
+    font-family:"Helvetica";
+    color: white;
+    background-color: black; 
+}
+
+a:link { 
+    color:  #CCCCCC;
+}
+
+a:visited { 
+    color:  #AAAAAA;
+}

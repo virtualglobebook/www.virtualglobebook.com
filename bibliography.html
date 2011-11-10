@@ -1,0 +1,781 @@
+<html>
+<head>
+<title>3D Engine Design for Virtual Globes</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16048240-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>    
+
+<body>
+
+<img src="strip.png" width="630" height="95" alt="3D Engine Design for Virtual Globes Cover" />
+<table summary="" border="0" width="630">
+<tr align="center">
+  <td><a href="index.html">Home</a></td>
+  <td><a href="toc.html">TOC</a></td>
+  <td><a href="backcover.html">Back Cover</a></td>
+  <td><a href="reviews.html">Reviews</a></td>
+  <td><a href="code.html">Code</a></td>
+  <td><a href="figures.html">Figures</a></td>
+  <td><a href="bibliography.html">Bibliography</a></td>
+  <td><a href="bibtex.html">BibTeX</a></td>
+  <td><a href="errata.html">Errata</a></td>
+  <td><a href="http://blog.virtualglobebook.com/">Blog</a></td>
+</tr>
+</table>
+
+
+<h1>Bibliography</h1>
+
+<table summary="" border="0" width="630">
+<tr><td>
+
+<p>
+[1] Kurt Akeley and Jonathan Su. "Minimum Triangle Separation for Correct z-Buffer Occlusion." In <em>Proceedings of the 21st ACM SIGGRAPH/EUROGRAPHICS Symposium on Graphics Hardware</em>. New York: ACM Press, 2006. Available at <a href="http://research.microsoft.com/pubs/79213/GH%202006%20p027%20Akeley%20Su.pdf">http://research.microsoft.com/pubs/79213/GH%202006%20p027%20Akeley%20Su.pdf</a>.
+</p>
+
+<p>
+[2] Kurt Akeley. "The Hidden Charms of the z-Buffer." In IRIS Universe 11, pp. 31-37, 1990.
+</p>
+
+<p>
+[3] Tomas Akenine-Moller, Eric Haines, and Naty Homan. Real-Time Rendering, Third edition. Wellesley, MA: A K Peters, Ltd., 2008.  <a href="http://www.realtimerendering.com/">www.realtimerendering.com</a>.
+</p>
+
+<p>
+[4] Johan Andersson and Natalya Tatarchuk. "Frostbite: Rendering Architecture and Real-Time Procedural Shading &amp; Texturing Techniques." In <em>Game Developers Conference</em>, 2007. Available at <a href="http://developer.amd.com/assets/Andersson-Tatarchuk-FrostbiteRenderingArchitecture%28GDC07_AMD_Session%29.pdf">http://developer.amd.com/assets/Andersson-Tatarchuk-FrostbiteRenderingArchitecture%28GDC07_AMD_Session%29.pdf</a>.
+</p>
+
+<p>
+[5] Johan Andersson. "Terrain Rendering in Frostbite Using Procedural Shader Splatting." In <em>Proceedings of SIGGRAPH 07: ACM SIGGRAPH 2007 Courses</em>, pp. 38-58. New York: ACM Press, 2007. Available at <a href="http://developer.amd.com/documentation/presentations/legacy/Chapter5-Andersson-Terrain_Rendering_in_Frostbite.pdf">http://developer.amd.com/documentation/presentations/legacy/Chapter5-Andersson-Terrain_Rendering_in_Frostbite.pdf</a>.
+</p>
+
+<p>
+[6] Johan Andersson. "Parallel Graphics in Frostbite - Current &amp; Future." In <em>SIGGRAPH, 2009</em>. Available at <a href="http://s09.idav.ucdavis.edu/talks/04-JAndersson-ParallelFrostbite-Siggraph09.pdf">http://s09.idav.ucdavis.edu/talks/04-JAndersson-ParallelFrostbite-Siggraph09.pdf</a>.
+</p>
+
+<p>
+[7] Edward Angel. <em>Interactive Computer Graphics: A Top-Down Approach Using OpenGL</em>, Fourth edition. Reading, MA: Addison Wesley, 2005.
+</p>
+
+<p>
+[8] Apple. "Enabling Multi-Threaded Execution of the OpenGL Framework." Technical report, Apple, 2006. Available at <a href="http://developer.apple.com/library/mac/#technotes/tn2085/_index.html">http://developer.apple.com/library/mac/#technotes/tn2085/_index.html</a>.
+</p>
+
+<p>
+[9] Arul Asirvatham and Hugues Hoppe. "Terrain Rendering Using GPU-Based Geometry Clipmaps." In <em>GPU Gems 2</em>, edited by Matt Pharr, pp. 27-45. Reading, MA: Addison-Wesley, 2005. Available at <a href="http://http.developer.nvidia.com/GPUGems2/gpugems2_chapter02.html">http://http.developer.nvidia.com/GPUGems2/gpugems2_chapter02.html</a>.
+</p>
+
+<p>
+[10] Andreas Baerentzen, Steen Lund Nielsen, Mikkel Gjael, Bent D. Larsen, and Niels Jaergen Christensen. "Single-Pass Wireframe Rendering." In <em>Proceedings of SIGGRAPH 06: ACM SIGGRAPH 2006 Sketches</em>. New York: ACM Press, 2006. Available at <a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=4884">http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=4884</a>.
+</p>
+
+<p>
+[11] Steve Baker. "Learning to Love Your z-Buffer." Available at <a href="http://www.sjbaker.org/steve/omniv/love_your_z_buffer.html">http://www.sjbaker.org/steve/omniv/love_your_z_buffer.html</a>, 1999.
+</p>
+
+<p>
+[12] Avi Bar-Zeev. "How Google Earth Really Works." Available at <a href="http://www.realityprime.com/articles/how-google-earth-really-works">http://www.realityprime.com/articles/how-google-earth-really-works</a>, 2007.
+</p>
+
+<p>
+[13] Sean Barrett. "Enumeration of Polygon Edges from Vertex Windings." Available at <a href="http://nothings.org/computer/edgeenum.html">http://nothings.org/computer/edgeenum.html</a>, 2008.
+</p>
+
+<p>
+[14] Louis Bavoil. "Effcient Multifragment Effects on Graphics Processing Units." Master's thesis, University of Utah, 2007. Available at <a href="http://www.sci.utah.edu/~csilva/papers/thesis/louis-bavoil-ms-thesis.pdf">http://www.sci.utah.edu/~csilva/papers/thesis/louis-bavoil-ms-thesis.pdf</a>.
+</p>
+
+<p>
+[15] Bill Bilodeau and Mike Songy. "Real Time Shadows." In <em>Creativity '99, Creative Labs Inc. Sponsored Game Developer Conferences</em>, 1999.
+</p>
+
+<p>
+[16] Ruzinoor bin Che Mat and Dr. Mahes Visvalingam. "Effectiveness of Silhouette Rendering Algorithms in Terrain Visualisation." In <em>Proceedings of the National Conference on Computer Graphics and Multimedia (CoGRAMM)</em>, 2002. Available at <a href="http://staf.uum.edu.my/ruzinoor/COGRAMM.pdf">http://staf.uum.edu.my/ruzinoor/COGRAMM.pdf</a>.
+</p>
+
+<p>
+[17] Charles Bloom. "Terrain Texture Compositing by Blending in the FrameBuffer." Available at <a href="http://www.cbloom.com/3d/techdocs/splatting.txt">http://www.cbloom.com/3d/techdocs/splatting.txt</a>, 2000.
+</p>
+
+<p>
+[18] Charles Bloom. "View Independent Progressive Meshes (VIPM)." Available at <a href="http://www.cbloom.com/3d/techdocs/vipm.txt">http://www.cbloom.com/3d/techdocs/vipm.txt</a>, 2000.
+</p>
+
+<p>
+[19] Jeff Bolz. "ARB ES2 compatibility." Available at <a href="http://www.opengl.org/registry/specs/ARB/ES2_compatibility.txt">http://www.opengl.org/registry/specs/ARB/ES2_compatibility.txt</a>, 2010.
+</p>
+
+<p>
+[20] Jeff Bolz. "ARB shader subroutine." Available at <a href="http://www.opengl.org/registry/specs/ARB/shader_subroutine.txt">http://www.opengl.org/registry/specs/ARB/shader_subroutine.txt</a>, 2010.
+</p>
+
+<p>
+[21] Flavien Brebion. "Tip of the Day: Logarithmic z-Buffer Artifacts Fix." Available at <a href="http://www.gamedev.net/blog/73/entry-2006307-tip-of-the-day-logarithmic-zbuffer-artifacts-fix/">http://www.gamedev.net/blog/73/entry-2006307-tip-of-the-day-logarithmic-zbuffer-artifacts-fix/</a>, 2009.
+</p>
+
+<p>
+[22] Pat Brown. "EXT texture array." Available at <a href="http://www.opengl.org/registry/specs/EXT/texture_array.txt">http://www.opengl.org/registry/specs/EXT/texture_array.txt</a>, 2008.
+</p>
+
+<p>
+[23] Bruce M. Bush. "The Perils of Floating Point." Available at <a href="http://www.lahey.com/float.htm">http://www.lahey.com/float.htm</a>, 1996.
+</p>
+
+<p>
+[24] Fay Chang, Jeffrey Dean, Sanjay Ghemawat, Wilson C. Hsieh, Deborah A. Wallach, Mike Burrows, Tushar Chandra, Andrew Fikes, and Robert E. Gruber. "Bigtable: A Distributed Storage System for Structured Data." In <em>Proceedings of the 7th Conference on USENIX Symposium on Operating Systems Design and Implementation</em>, 7, 7, pp. 205-218, 2006. Available at <a href="http://labs.google.com/papers/bigtable-osdi06.pdf">http://labs.google.com/papers/bigtable-osdi06.pdf</a>.
+</p>
+
+<p>
+[25] Bernard Chazelle. "Triangulating a Simple Polygon in Linear Time." <em>Discrete Comput. Geom.</em> 6:5 (1991), 485-524.
+</p>
+
+<p>
+[26] M. Christen. "The Future of Virtual Globes - The Interactive Ray-Traced Digital Earth." In <em>ISPRS Congress Beijing 2008, Proceedings of Commission II, ThS 4</em>, 2008. Available at <a href="http://www.3dgi.ch/publications/chm/virtualglobesfuture.pdf">http://www.3dgi.ch/publications/chm/virtualglobesfuture.pdf</a>.
+</p>
+
+<p>
+[27] Malte Clasen and Hans-Christian Hege. "Terrain Rendering Using Spherical Clipmaps." In <em>Eurographics/IEEE-VGTC Symposium on Visualisation</em>, pp. 91-98, 2006. Available at <a href="http://www.zib.de/clasen/?page_id=6">http://www.zib.de/clasen/?page_id=6</a>.
+</p>
+
+<p>
+[28] Kate Compton, James Grieve, Ed Goldman, Ocean Quigley, Christian Stratton, Eric Todd, and Andrew Willmott. "Creating Spherical Worlds." In <em>Proceedings of SIGGRAPH 07: ACM SIGGRAPH 2007 Sketches</em>, p. 82. New York: ACM Press, 2007. Available at <a href="http://www.andrewwillmott.com/s2007">http://www.andrewwillmott.com/s2007</a>.
+</p>
+
+<p>
+[29] Wagner T. Correa, James T. Klosowski, and Claudio T. Silva. "Visibility-Based Prefetching for Interactive Out-of-Core Rendering." In <em>Proceedings of the 2003 IEEE Symposium on Parallel and Large-Data Visualization and Graphics</em>. Los Alamitos, CA: IEEE Computer Society, 2003. Available at <a href="http://www.evl.uic.edu/cavern/rg/20040525_renambot/Viz/parallel_volviz/prefetch_outofcore_viz_pvg03.pdf">http://www.evl.uic.edu/cavern/rg/20040525_renambot/Viz/parallel_volviz/prefetch_outofcore_viz_pvg03.pdf</a>.
+</p>
+
+<p>
+[30] Patrick Cozzi and Frank Stoner. "GPU Ray Casting of Virtual Globes." In <em>Proceedings of SIGGRAPH 10: ACM SIGGRAPH 2010 Posters</em>, p. 1. New York: ACM Press, 2010. Available at <a href="http://www.agi.com/gpuraycastingofvirtualglobes">http://www.agi.com/gpuraycastingofvirtualglobes</a>.
+</p>
+
+<p>
+[31] Patrick Cozzi. "A Framework for GLSL Engine Uniforms." In <em>Game Engine Gems 2</em>, edited by Eric Lengyel. Natick, MA: A K Peters, Ltd., 2011. <a href="http://www.gameenginegems.net/">http://www.gameenginegems.net/</a>.
+</p>
+
+<p>
+[32] Patrick Cozzi. "Delaying OpenGL Calls." In <em>Game Engine Gems 2</em>, edited by Eric Lengyel. Natick, MA: A K Peters, Ltd., 2011. <a href="http://www.gameenginegems.net/">http://www.gameenginegems.net/</a>.
+</p>
+
+<p>
+[33] Matt Craighead, Mark Kilgard, and Pat Brown. "ARB point sprite." Available at <a href="http://www.opengl.org/registry/specs/ARB/point_sprite.txt">http://www.opengl.org/registry/specs/ARB/point_sprite.txt</a>, 2003.
+</p>
+
+<p>
+[34] Matt Craighead. "NV_primitive_restart." Available at <a href="http://www.opengl.org/registry/specs/NV/primitive_restart.txt">http://www.opengl.org/registry/specs/NV/primitive_restart.txt</a>, 2002.
+</p>
+
+<p>
+[35] Cyril Crassin, Fabrice Neyret, Sylvain Lefebvre, and Elmar Eisemann. "GigaVoxels: Ray-Guided Streaming for Efficient and Detailed Voxel Rendering." In <em>ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D)</em>. New York: ACM Press, 2009. Available at <a href="http://artis.imag.fr/Publications/2009/CNLE09/">http://artis.imag.fr/Publications/2009/CNLE09/</a>.
+</p>
+
+<p>
+[36] Chenguang Dai, Yongsheng Zhang, and Jingyu Yang. "Rendering 3D Vector Data Using the Theory of Stencil Shadow Volumes." In <em>ISPRS Congress Beijing 2008, Proceedings of Commission II, WG II/5</em>, 2008. Available at <a href="http://www.isprs.org/proceedings/XXXVII/congress/2_pdf/5_WG-II-5/06.pdf">http://www.isprs.org/proceedings/XXXVII/congress/2_pdf/5_WG-II-5/06.pdf</a>.
+</p>
+
+<p>
+[37] Christian Dick, Jens Kruger, and Rudiger Westermann. "GPU Ray-Casting for Scalable Terrain Rendering." In <em>Proceedings of Eurographics 2009 - Areas Papers</em>, pp. 43-50, 2009. Available at <a href="http://wwwcg.in.tum.de/Research/Publications/TerrainRayCasting">http://wwwcg.in.tum.de/Research/Publications/TerrainRayCasting</a>.
+</p>
+
+<p>
+[38] Christian Dick. "Interactive Methods in Scientific Visualization: Terrain Rendering." In <em>IEEE/VGTC Visualization Symposium</em>, 2009. Available at <a href="http://wwwcg.in.tum.de/Tutorials/PacificVis09/Terrain.pdf">http://wwwcg.in.tum.de/Tutorials/PacificVis09/Terrain.pdf</a>.
+</p>
+
+<p>
+[39] Alan Neil Ditchfield. "Honeycomb Spherical Figure." Available at <a href="http://www.neubert.net/Download/global-grid.doc">http://www.neubert.net/Download/global-grid.doc</a>, 2001.
+</p>
+
+<p>
+[40] David Douglas and Thomas Peucker. "Algorithms for the Reduction of the Number of Points Required to Represent a Digitized Line or its Caricature." <em>The Canadian Cartographer</em> 10:2 (1973), 112-122.
+</p>
+
+<p>
+[41] Mark Duchaineau, Murray Wolinsky, David E. Sigeti, Mark C. Miller, Charles Aldrich, and Mark B. Mineev-Weinstein. "ROAMing Terrain: Real-Time Optimally Adapting Meshes." In <em>Proceedings of the 8th Conference on Visualization '97</em>, pp. 81-88. Los Alamitos, CA: IEEE Computer Society, 1997.
+</p>
+
+<p>
+[42] Jonathan Dummer. "Cone Step Mapping: An Iterative Ray-Heightfield Intersection Algorithm." Available at <a href="http://www.lonesock.net/files/ConeStepMapping.pdf">http://www.lonesock.net/files/ConeStepMapping.pdf</a>, 2006.
+</p>
+
+<p>
+[43] David Eberly. <em>3D Game Engine Design: A Practical Approach to Real-Time Computer Graphics</em>, Second edition. San Francisco: Morgan Kaufmann, 2006.
+</p>
+
+<p>
+[44] David Eberly. "Triangulation by Ear Clipping." Available at <a href="http://www.geometrictools.com/Documentation/TriangulationByEarClipping.pdf">http://www.geometrictools.com/Documentation/TriangulationByEarClipping.pdf</a>, 2008.
+</p>
+
+<p>
+[45] David Eberly. "Wild Magic 5 Overview." Available at <a href="http://www.geometrictools.com/WildMagic5Overview.pdf">http://www.geometrictools.com/WildMagic5Overview.pdf</a>, 2010.
+</p>
+
+<p>
+[46] Christer Ericson. "Physics for Games Programmers: Numerical Robustness (for Geometric Calculations)." Available at <a href="http://realtimecollisiondetection.net/pubs/">http://realtimecollisiondetection.net/pubs/</a>, 2007.
+</p>
+
+<p>
+[47] Christer Ericson. "Order Your Graphics Draw Calls Around!" Available at <a href="http://realtimecollisiondetection.net/blog/?p=86">http://realtimecollisiondetection.net/blog/?p=86</a>, 2008.
+</p>
+
+<p>
+[48] Carl Erikson, Dinesh Manocha, and William V. Baxter III. "HLODs for Faster Display of Large Static and Dynamic Environments." In <em>Proceedings of the 2001 Symposium on Interactive 3D Graphics</em>, pp. 111-120. New York: ACM Press, 2001.
+</p>
+
+<p>
+[49] ESRI. "ESRI Shapefile Technical Description." Available at <a href="http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf">http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf</a>, 1998.
+</p>
+
+<p>
+[50] Tom Forsyth. "Linear-Speed Vertex Cache Optimisation." Available at <a href="http://home.comcast.net/~tom_forsyth/papers/fast_vert_cache_opt.html">http://home.comcast.net/~tom_forsyth/papers/fast_vert_cache_opt.html</a>, 2006.
+</p>
+
+<p>
+[51] Tom Forsyth. "A Matter of Precision." Available at <a href="http://home.comcast.net/~tom_forsyth/blog.wiki.html#%5B%5BA%20matter%20of%20precision%5D%5D">http://home.comcast.net/~tom_forsyth/blog.wiki.html#%5B%5BA%20matter%20of%20precision%5D%5D</a>, 2006.
+</p>
+
+<p>
+[52] Tom Forsyth. "Renderstate Change Costs." Available at <a href="http://home.comcast.net/~tom_forsyth/blog.wiki.html#%5B%5BRenderstate%20change%20costs%5D%5D">http://home.comcast.net/~tom_forsyth/blog.wiki.html#%5B%5BRenderstate%20change%20costs%5D%5D</a>, 2008.
+</p>
+
+<p>
+[53] Anton Fruhstuck. "GPU Based Clipmaps." Master's thesis, Vienna University of Technology, 2008. Available at <a href="http://www.cg.tuwien.ac.at/research/publications/2008/fruehstueck-2008-gpu/">http://www.cg.tuwien.ac.at/research/publications/2008/fruehstueck-2008-gpu/</a>.
+</p>
+
+<p>
+[54] M. R. Garey and D. S. Johnson. <em>Computers and Intractability: A Guide to the Theory of NP-Completeness</em>. New York: W. H. Freeman, 1979.
+</p>
+
+<p>
+[55] Michael Garland and Paul S. Heckbert. "Surface Simplification Using Quadric Error Metrics." In <em>Proceedings of SIGGRAPH 97, Computer Graphics Proceedings, Annual Conference Series</em>, edited by Turner Whitted, pp. 209-216. Reading, MA: Addison Wesley, 1997. Available at <a href="http://mgarland.org/files/papers/quadrics.pdf">http://mgarland.org/files/papers/quadrics.pdf</a>.
+</p>
+
+<p>
+[56] Samuel Gateau. "Solid Wireframe." In <em>White Paper WP-03014-001 v01</em>. NVIDIA Corporation, 2007. Available at <a href="http://developer.download.nvidia.com/SDK/10.5/direct3d/Source/SolidWireframe/Doc/SolidWireframe.pdf">http://developer.download.nvidia.com/SDK/10.5/direct3d/Source/SolidWireframe/Doc/SolidWireframe.pdf</a>.
+</p>
+
+<p>
+[57] Nick Gebbie and Mike Bailey. "Fast Realistic Rendering of Global Worlds Using Programmable Graphics Hardware." <em>Journal of Game Development</em> 1:4 (2006), 5-28. Available at <a href="http://web.engr.oregonstate.edu/~mjb/WebMjb/Papers/globalworlds.pdf">http://web.engr.oregonstate.edu/~mjb/WebMjb/Papers/globalworlds.pdf</a>.
+</p>
+
+<p>
+[58] Ryan Geiss and Michael Thompson. "NVIDIA Demo Team Secrets: Cascades." In <em>Game Developers Conference</em>, 2007. Available at <a href="http://www.slideshare.net/icastano/cascades-demo-secrets">http://www.slideshare.net/icastano/cascades-demo-secrets</a>.
+</p>
+
+<p>
+[59] Ryan Geiss. "Generating Complex Procedural Terrains Using the GPU." In <em>GPU Gems 3</em>, edited by Hubert Nguyen, pp. 7-37. Reading, MA: Addison Wesley, 2007. Available at <a href="http://http.developer.nvidia.com/GPUGems3/gpugems3_ch01.html">http://http.developer.nvidia.com/GPUGems3/gpugems3_ch01.html</a>.
+</p>
+
+<p>
+[60] Philipp Gerasimov, Randima Fernando, and Simon Green. "Shader Model 3.0: Using Vertex Textures." Available at <a href="ftp://download.nvidia.com/developer/Papers/2004/Vertex_Textures/Vertex_Textures.pdf">ftp://download.nvidia.com/developer/Papers/2004/Vertex_Textures/Vertex_Textures.pdf</a>, 2004.
+</p>
+
+<p>
+[61] Thomas Gerstner. "Multiresolution Visualization and Compression of Global Topographic Data." <em>GeoInformatica</em> 7:1 (2003), 7-32. Available at <a href="http://wissrech.iam.uni-bonn.de/research/pub/gerstner/globe.pdf">http://wissrech.iam.uni-bonn.de/research/pub/gerstner/globe.pdf</a>.
+</p>
+
+<p>
+[62] Benno Giesecke. "Space Vehicles in Virtual Globes: Recommendations for the Visualization Of Objects in Space." Available at <a href="http://www.agi.com/downloads/support/productSupport/literature/pdfs/whitePapers/2007-05-24_SpaceVehiclesinVirtualGlobes.pdf">http://www.agi.com/downloads/support/productSupport/literature/pdfs/whitePapers/2007-05-24_SpaceVehiclesinVirtualGlobes.pdf</a>, 2007.
+</p>
+
+<p>
+[63] Enrico Gobbetti, Dave Kasik, and Sung eui Yoon. "Technical Strategies for Massive Model Visualization." In <em>Proceedings of the 2008 ACM Symposium on Solid and Physical Modeling</em>, pp. 405-415. New York: ACM Press, 2008.
+</p>
+
+<p>
+[64] Google. "KML Reference." Available at <a href="http://code.google.com/apis/kml/documentation/kmlreference.html">http://code.google.com/apis/kml/documentation/kmlreference.html</a>, 2010.
+</p>
+
+<p>
+[65] K. M. Gorski, E. Hivon, A. J. Banday, B. D. Wandelt, F. K. Hansen, M. Reinecke, and M. Bartelmann. "HEALPix: A Framework for High-Resolution Discretization and Fast Analysis of Data Distributed on the Sphere." <em>The Astrophysical Journal</em> 622:2 (2005), 759-771. Available at <a href="http://stacks.iop.org/0004-637X/622/759">http://stacks.iop.org/0004-637X/622/759</a>.
+</p>
+
+<p>
+[66] Evan Hart. "OpenGL SDK Guide." Available at <a href="http://developer.download.nvidia.com/SDK/10.5/opengl/OpenGL_SDK_Guide.pdf">http://developer.download.nvidia.com/SDK/10.5/opengl/OpenGL_SDK_Guide.pdf</a>, 2008.
+</p>
+
+<p>
+[67] Chris Hecker. "Let's Get to the (Floating) Point." <em>Game Developer Magazine</em> February (1996), 19-24. Available at <a href="http://chrishecker.com/Miscellaneous_Technical_Articles#Floating_Point">http://chrishecker.com/Miscellaneous_Technical_Articles#Floating_Point</a>.
+</p>
+
+<p>
+[68] Tim Heidmann. "Real Shadows, Real Time." In <em>IRIS Universe</em>, 18, 18, pp. 23-31. Fremont, CA: Silicon Graphics Inc., 1991.
+</p>
+
+<p>
+[69] Martin Held. "FIST: Fast Industrial-Strength Triangulation of Polygons." Technical report, Algorithmica, 2000. Available at <a href="http://cgm.cs.mcgill.ca/~godfried/publications/triangulation.held.ps.gz">http://cgm.cs.mcgill.ca/~godfried/publications/triangulation.held.ps.gz</a>.
+</p>
+
+<p>
+[70] Martin Held. "FIST: Fast Industrial-Strength Triangulation of Polygons." Available at <a href="http://www.cosy.sbg.ac.at/~held/projects/triang/triang.html">http://www.cosy.sbg.ac.at/~held/projects/triang/triang.html</a>, 2008.
+</p>
+
+<p>
+[71] Martin Held. "Algorithmische Geometrie: Triangulation." Available at <a href="http://www.cosy.sbg.ac.at/~held/teaching/compgeo/slides/triang_slides.pdf">http://www.cosy.sbg.ac.at/~held/teaching/compgeo/slides/triang_slides.pdf</a>, 2010.
+</p>
+
+<p>
+[72] John L. Hennessy and David A. Patterson. <em>Computer Architecture: A Quantitative Approach</em>, Fourth edition. San Francisco: Morgan Kaufmann, 2006.
+</p>
+
+<p>
+[73] John Hershberger and Jack Snoeyink. "Speeding Up the Douglas-Peucker Line-Simplification Algorithm." In <em>Proc. 5th Intl. Symp. on Spatial Data Handling</em>, pp. 134-143, 1992. Available at <a href="http://www.bowdoin.edu/~ltoma/teaching/cs350/spring06/Lecture-Handouts/hershberger92speeding.pdf">http://www.bowdoin.edu/~ltoma/teaching/cs350/spring06/Lecture-Handouts/hershberger92speeding.pdf</a>.
+</p>
+
+<p>
+[74] Hugues Hoppe. "Smooth View-Dependent Level-of-Detail Control and Its Application to Terrain Rendering." In <em>Proceedings of the Conference on Visualization '98</em>, pp. 35-42. Los Alamitos, CA: IEEE Computer Society, 1998.
+</p>
+
+<p>
+[75] Takeo Igarashi and Dennis Cosgrove. "Adaptive Unwrapping for Interactive Texture Painting." In <em>ACM Symposium on Interactive 3D Graphics</em>, pp. 209-216. New York: ACM Press, 2001. Available at <a href="http://www-ui.is.s.u-tokyo.ac.jp/~takeo/papers/i3dg2001.pdf">http://www-ui.is.s.u-tokyo.ac.jp/~takeo/papers/i3dg2001.pdf</a>.
+</p>
+
+<p>
+[76] Ivan-Assen Ivanov. "Practical Texture Atlases." In <em>Gamasutra</em>, 2006. Available at <a href="http://www.gamasutra.com/view/feature/2530/practical_texture_atlases.php">http://www.gamasutra.com/view/feature/2530/practical_texture_atlases.php</a>.
+</p>
+
+<p>
+[77] Tim Jenks. "Terrain Texture Blending on a Programmable GPU." Available at <a href="http://www.jenkz.org/articles/terraintexture.htm">http://www.jenkz.org/articles/terraintexture.htm</a>, 2005.
+</p>
+
+<p>
+[78] Jukka Jylanki. "A Thousand Ways to Pack the Bin - A Practical Approach to Two-Dimensional Rectangle Bin Packing." Available at <a href="http://clb.demon.fi/files/RectangleBinPack.pdf">http://clb.demon.fi/files/RectangleBinPack.pdf</a>, 2010.
+</p>
+
+<p>
+[79] Jukka Jylanki. "Even More Rectangle Bin Packing." Available at <a href="http://clb.demon.fi/projects/even-more-rectangle-bin-packing">http://clb.demon.fi/projects/even-more-rectangle-bin-packing</a>, 2010.
+</p>
+
+<p>
+[80] Anu Kalra and J.M.P. van Waveren. "Threading Game Engines: QUAKE 4 &amp; Enemy Territory QUAKE Wars." In <em>Game Developer Conference</em>, 2008. Available at <a href="http://mrelusive.com/publications/presentations/2008_gdc/GDC%2008%20Threading%20QUAKE%204%20and%20ETQW%20Final.pdf">http://mrelusive.com/publications/presentations/2008_gdc/GDC%2008%20Threading%20QUAKE%204%20and%20ETQW%20Final.pdf</a>.
+</p>
+
+<p>
+[81] Brano Kemen. "Floating Point Depth Buffer." Available at <a href="http://outerra.blogspot.com/2009/12/floating-point-depth-buffer.html">http://outerra.blogspot.com/2009/12/floating-point-depth-buffer.html</a>, 2009.
+</p>
+
+<p>
+[82] Brano Kemen. "Logarithmic Depth Buffer." Available at <a href="http://outerra.blogspot.com/2009/08/logarithmic-z-buffer.html">http://outerra.blogspot.com/2009/08/logarithmic-z-buffer.html</a>, 2009.
+</p>
+
+<p>
+[83] R. Keys. "Cubic Convolution Interpolation for Digital Image Processing." <em>IEEE Transactions on Acoustics, Speech and Signal Processing ASSP-29</em> (1981), 1153-1160.
+</p>
+
+<p>
+[84] Mark Kilgard and Daniel Koch. "ARB_fragment_coord_conventions." Available at <a href="http://www.opengl.org/registry/specs/ARB/fragment_coord_conventions.txt">http://www.opengl.org/registry/specs/ARB/fragment_coord_conventions.txt</a>, 2009.
+</p>
+
+<p>
+[85] Mark Kilgard and Daniel Koch. "ARB_provoking_vertex." Available at <a href="http://www.opengl.org/registry/specs/ARB/provoking_vertex.txt">http://www.opengl.org/registry/specs/ARB/provoking_vertex.txt</a>, 2009.
+</p>
+
+<p>
+[86] Mark Kilgard and Daniel Koch. "ARB_vertex_array_bgra." Available at <a href="http://www.opengl.org/registry/specs/ARB/vertex_array_bgra.txt">http://www.opengl.org/registry/specs/ARB/vertex_array_bgra.txt</a>, 2009.
+</p>
+
+<p>
+[87] Mark Kilgard, Greg Roth, and Pat Brown. "GL_ARB_separate_shader_objects." Available at <a href="http://www.opengl.org/registry/specs/ARB/separate_shader_objects.txt">http://www.opengl.org/registry/specs/ARB/separate_shader_objects.txt</a>, 2010.
+</p>
+
+<p>
+[88] Mark Kilgard. "Avoiding 16 Common OpenGL Pitfalls." Available at <a href="http://www.opengl.org/resources/features/KilgardTechniques/oglpitfall/">http://www.opengl.org/resources/features/KilgardTechniques/oglpitfall/</a>, 2000.
+</p>
+
+<p>
+[89] Mark Kilgard. "More Advanced Hardware Rendering Techniques." In <em>Game Developers Conference</em>, 2001. Available at <a href="http://developer.download.nvidia.com/assets/gamedev/docs/GDC01_md2shader_PDF.zip">http://developer.download.nvidia.com/assets/gamedev/docs/GDC01_md2shader_PDF.zip</a>.
+</p>
+
+<p>
+[90] Mark Kilgard. "OpenGL 3: Revolution through Evolution." In <em>Proceedings of SIGGRAPH Asia</em>, 2008. Available at <a href="http://www.khronos.org/developers/library/2008_siggraph_asia/OpenGL%20Overview%20SIGGRAPH%20Asia%20Dec08%20.pdf">http://www.khronos.org/developers/library/2008_siggraph_asia/OpenGL%20Overview%20SIGGRAPH%20Asia%20Dec08%20.pdf</a>.
+</p>
+
+<p>
+[91] Mark Kilgard. "EXT_direct_state_access." Available at <a href="http://www.opengl.org/registry/specs/EXT/direct_state_access.txt">http://www.opengl.org/registry/specs/EXT/direct_state_access.txt</a>, 2010.
+</p>
+
+<p>
+[92] Donald E. Knuth. <em>Seminumerical Algorithms</em>, Second edition. The Art of Computer Programming, vol. 2, Reading, MA: Addison-Wesley, 1997.
+</p>
+
+<p>
+[93] Jaakko Konttinen. "ARB_debug_output." Available at <a href="http://www.opengl.org/registry/specs/ARB/debug_output.txt">http://www.opengl.org/registry/specs/ARB/debug_output.txt</a>, 2010.
+</p>
+
+<p>
+[94] Eugene Lapidous and Guofang Jiao. "Optimal Depth Buer for Low-Cost Graphics Hardware." In <em>Proceedings of the ACM SIGGRAPH/EUROGRAPHICS Workshop on Graphics Hardware</em>, pp. 67-73, 1999. Available at <a href="http://www.graphicshardware.org/previous/www_1999/presentations/d-buffer/">http://www.graphicshardware.org/previous/www_1999/presentations/d-buffer/</a>.
+</p>
+
+<p>
+[95] Cedric Laugerotte. "Tessellation of Sphere by a Recursive Method." Available at <a href="http://student.ulb.ac.be/~claugero/sphere/">http://student.ulb.ac.be/~claugero/sphere/</a>, 2001.
+</p>
+
+<p>
+[96] Jon Leech. "ARB_sync." Available at <a href="http://www.opengl.org/registry/specs/ARB/sync.txt">http://www.opengl.org/registry/specs/ARB/sync.txt</a>, 2009.
+</p>
+
+<p>
+[97] Aaron Lefohn and Mike Houston. "Beyond Programmable Shading." In <em>ACM SIGGRAPH 2008 Courses</em>, 2008. Available at <a href="http://s08.idav.ucdavis.edu/">http://s08.idav.ucdavis.edu/</a>.
+</p>
+
+<p>
+[98] Aaron Lefohn and Mike Houston. "Beyond Programmable Shading." In <em>ACM SIGGRAPH 2009 Courses</em>, 2009. Available at <a href="http://s09.idav.ucdavis.edu/">http://s09.idav.ucdavis.edu/</a>.
+</p>
+
+<p>
+[99] Aaron Lefohn and Mike Houston. "Beyond Programmable Shading." In <em>ACM SIGGRAPH 2010 Courses</em>, 2010. Available at <a href="http://bps10.idav.ucdavis.edu/">http://bps10.idav.ucdavis.edu/</a>.
+</p>
+
+<p>
+[100] Ian Lewis. "Getting More From Multicore." In <em>Game Developer Conference</em>, 2008. Available at <a href="http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=17170">http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=17170</a>.
+</p>
+
+<p>
+[101] Peter Lindstrom and Jonathan D. Cohen. "On-the-Fly Decompression and Rendering of Multiresolution Terrain." In <em>Proceedings of the 2010 ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games</em>, pp. 65-73. New York: ACM Press, 2010. Available at <a href="https://e-reports-ext.llnl.gov/pdf/371781.pdf">https://e-reports-ext.llnl.gov/pdf/371781.pdf</a>.
+</p>
+
+<p>
+[102] Peter Lindstrom, David Koller, William Ribarsky, Larry F. Hodges, Nick Faust, and Gregory A. Turner. "Real-Time, Continuous Level of Detail Rendering of Height Fields." In <em>Proceedings of SIGGRAPH 96, Computer Graphics Proceedings, Annual Conference Series<em>, edited by Holly Rushmeier, pp. 109-118. Reading, MA: Addison Wesley, 1996.
+</p>
+
+<p>
+[103] Benj Lipchak, Greg Roth, and Piers Daniell. "ARB_get_program_binary." Available at <a href="http://www.opengl.org/registry/specs/ARB/get_program_binary.txt">http://www.opengl.org/registry/specs/ARB/get_program_binary.txt</a>, 2010.
+</p>
+
+<p>
+[104] William E. Lorensen and Harvey E. Cline. "Marching Cubes: A High Resolution 3D Surface Construction Algorithm." <em>SIGGRAPH Computer Graphics</em> 21:4 (1987), 163-169.
+</p>
+
+<p>
+[105] Frank Losasso and Hugues Hoppe. "Geometry Clipmaps: Terrain Rendering Using Nested Regular Grids." In <em>Proceedings of SIGGRAPH 2004 Papers</em>, pp. 769-776. New York: ACM Press, 2004. Available at <a href="http://research.microsoft.com/en-us/um/people/hoppe/proj/geomclipmap/">http://research.microsoft.com/en-us/um/people/hoppe/proj/geomclipmap/</a>.
+</p>
+
+<p>
+[106] Kok-Lim Low and Tiow-Seng Tan. \Model Simplification Using Vertex-Clustering." In <em>I3D 97: Proceedings of the 1997 Symposium on Interactive 3D Graphics</em>, pp. 75-ff. New York: ACM Press, 1997.
+</p>
+
+<p>
+[107] David Luebke, Martin Reddy, Jonathan Cohen, Amitabh Varshney, Benjamin Watson, and Robert Huebner. <em>Level of Detail for 3D Graphics</em>. San Francisco: Morgan Kaufmann, 2002. <a href="http://lodbook.com/">http://lodbook.com/</a>.
+</p>
+
+<p>
+[108] Henrique S. Malvar. "Fast Progressive Image Coding without Wavelets." In <em>Proceedings of the Conference on Data Compression</em>. Washington, DC: IEEE Computer Society, 2000. Available at <a href="http://research.microsoft.com/apps/pubs/?id=101991">http://research.microsoft.com/apps/pubs/?id=101991</a>.
+</p>
+
+<p>
+[109] CCP Mannapi. "Awesome Looking Planets." Available at <a href="http://www.eveonline.com/devblog.asp?a=blog&bid=724">http://www.eveonline.com/devblog.asp?a=blog&amp;bid=724</a>, 2010.
+</p>
+
+<p>
+[110] Paul Martz. "OpenGL FAQ: The Depth Buffer." Available at <a href="http://www.opengl.org/resources/faq/technical/depthbuffer.htm">http://www.opengl.org/resources/faq/technical/depthbuffer.htm</a>, 2000.
+</p>
+
+<p>
+[111] Gregory Massal. "Depth Buffer - The Gritty Details." Available at <a href="http://www.codermind.com/articles/Depth-buffer-tutorial.html">http://www.codermind.com/articles/Depth-buffer-tutorial.html</a>, 2006.
+</p>
+
+<p>
+[112] Morgan McGuire and Kyle Whitson. "Indirection Mapping for Quasi-Conformal Relief Mapping." In <em>ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games</em> (I3D '08), 2008. Available at <a href="http://graphics.cs.williams.edu/papers/IndirectionI3D08/">http://graphics.cs.williams.edu/papers/IndirectionI3D08/</a>.
+</p>
+
+<p>
+[113] Tom McReynolds and David Blythe. <em>Advanced Graphics Programming Using OpenGL</em>, The Morgan Kaufmann Series in Computer Graphics. San Francisco: Morgan Kaufmann, 2005.
+</p>
+
+<p>
+[114] "Direct3D 11 MultiThreading." Available at <a href="http://msdn.microsoft.com/en-us/library/ff476884.aspx">http://msdn.microsoft.com/en-us/library/ff476884.aspx</a>, 2010.
+</p>
+
+<p>
+[115] Microsoft. "DirectX Software Development Kit - RaycastTerrain Sample." Available at <a href="http://msdn.microsoft.com/en-us/library/ee416425(v=VS.85).aspx">http://msdn.microsoft.com/en-us/library/ee416425(v=VS.85).aspx</a>, 2008.
+</p>
+
+<p>
+[116] James R. Miller and Tom Gaskins. "Computations on an Ellipsoid for GIS." <em>Computer-Aided Design and Applications</em> 6:4 (2009), 575-583. Available at <a href="http://people.eecs.ku.edu/~miller/Papers/CAD_6_4__575-583.pdf">http://people.eecs.ku.edu/~miller/Papers/CAD_6_4__575-583.pdf</a>.
+</p>
+
+<p>
+[117] NASA Solar System Exploration. "Mars: Moons: Phobos." Available at <a href="http://solarsystem.nasa.gov/planets/profile.cfm?Object=Mar_Phobos">http://solarsystem.nasa.gov/planets/profile.cfm?Object=Mar_Phobos</a>, 2003.
+</p>
+
+<p>
+[118] National Imagery and Mapping Agency. <em>Department of Defense World Geodetic System 1984: Its Definition and Relationships with Local Geodetic Systems</em>, Third edition. National Imagery and Mapping Agency, 2000. Available at <a href="http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf">http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf</a>.
+</p>
+
+<p>
+[119] Kris Nicholson. "GPU Based Algorithms for Terrain Texturing." Master's thesis, University of Canterbury, 2008. Available at <a href="http://www.cosc.canterbury.ac.nz/research/reports/HonsReps/2008/hons_0801.pdf">http://www.cosc.canterbury.ac.nz/research/reports/HonsReps/2008/hons_0801.pdf</a>.
+</p>
+
+<p>
+[120] NVIDIA. "Using Vertex Buffer Objects." Available at <a href="http://www.nvidia.com/object/using_VBOs.html">http://www.nvidia.com/object/using_VBOs.html</a>, 2003.
+</p>
+
+<p>
+[121] NVIDIA. "Improve Batching Using Texture Atlases." Available at <a href="http://developer.download.nvidia.com/SDK/9.5/Samples/DEMOS/Direct3D9/src/BatchingViaTextureAtlases/AtlasCreationTool/Docs/Batching_Via_Texture_Atlases.pdf">http://developer.download.nvidia.com/SDK/9.5/Samples/DEMOS/Direct3D9/src/BatchingViaTextureAtlases/AtlasCreationTool/Docs/Batching_Via_Texture_Atlases.pdf</a>, 2004.
+</p>
+
+<p>
+[122] NVIDIA. "NVIDIA CUDA Compute Unified Device Architecture Programming Guide." Available at <a href="http://developer.download.nvidia.com/compute/cuda/2_0/docs/NVIDIA_CUDA_Programming_Guide_2.0.pdf">http://developer.download.nvidia.com/compute/cuda/2_0/docs/NVIDIA_CUDA_Programming_Guide_2.0.pdf</a>, 2008.
+</p>
+
+<p>
+[123] NVIDIA. "NVIDIA GPU Programming Guide." Available at <a href="http://www.nvidia.com/object/gpu_programming_guide.html">http://www.nvidia.com/object/gpu_programming_guide.html</a>, 2008.
+</p>
+
+<p>
+[124] NVIDIA. "Bindless Graphics Tutorial." Available at <a href="http://www.nvidia.com/object/bindless_graphics.html">http://www.nvidia.com/object/bindless_graphics.html</a>, 2009.
+</p>
+
+<p>
+[125] Deron Ohlarik. "Horizon Culling." Available at <a href="http://blogs.agi.com/insight3d/index.php/2008/04/18/horizon-culling/">http://blogs.agi.com/insight3d/index.php/2008/04/18/horizon-culling/</a>, 2008.
+</p>
+
+<p>
+[126] Deron Ohlarik. "Precisions, Precisions." Available at <a href="http://blogs.agi.com/insight3d/index.php/2008/09/03/precisions-precisions/">http://blogs.agi.com/insight3d/index.php/2008/09/03/precisions-precisions/</a>, 2008.
+</p>
+
+<p>
+[127] Deron Ohlarik. "Triangulation Rhymes with Strangulation." Available at <a href="http://blogs.agi.com/insight3d/index.php/2008/03/20/triangulation-rhymes-with-strangulation/">http://blogs.agi.com/insight3d/index.php/2008/03/20/triangulation-rhymes-with-strangulation/</a>, 2008.
+</p>
+
+<p>
+[128] Deron Ohlarik. "Horizon Culling 2." Available at <a href="http://blogs.agi.com/insight3d/index.php/2009/03/25/horizon-culling-2/">http://blogs.agi.com/insight3d/index.php/2009/03/25/horizon-culling-2/</a>, 2009.
+</p>
+
+<p>
+[129] Jon Olick. "Next Generation Parallelism in Games." In <em>Proceedings of ACM SIGGRAPH 2008 Courses</em>. New York: ACM Press, 2008. Available at <a href="http://s08.idav.ucdavis.edu/olick-current-and-next-generation-parallelism-in-games.pdf">http://s08.idav.ucdavis.edu/olick-current-and-next-generation-parallelism-in-games.pdf</a>.
+</p>
+
+<p>
+[130] Sean O'Neil. "A Real-Time Procedural Universe, Part Three: Matters of Scale." Available at <a href="http://www.gamasutra.com/view/feature/2984/a_realtime_procedural_universe_.php">http://www.gamasutra.com/view/feature/2984/a_realtime_procedural_universe_.php</a>, 2002.
+</p>
+
+<p>
+[131] Open Geospatial Consortium Inc. "OSG KML." Available at <a href="http://portal.opengeospatial.org/files/?artifact_id=27810">http://portal.opengeospatial.org/files/?artifact_id=27810</a>, 2008.
+</p>
+
+<p>
+[132] Charles B. Owen. "CSE 872 Advanced Computer Graphics - Tutorial 4: Texture Mapping." Available at <a href="http://www.cse.msu.edu/~cse872/tutorial4.html">http://www.cse.msu.edu/~cse872/tutorial4.html</a>, 2008.
+</p>
+
+<p>
+[133] David Pangerl. "Practical Thread Rendering for DirectX 9." In <em>GPU Pro</em>, edited by Wolfgang Engel. Natick, MA: A K Peters, Ltd., 2010. <a href="http://www.akpeters.com/gpupro/">http://www.akpeters.com/gpupro/</a>.
+</p>
+
+<p>
+[134] Steven G. Parker, James Bigler, Andreas Dietrich, Heiko Friedrich, Jared Hoberock, David Luebke, David McAllister, Morgan McGuire, Keith Morley, Austin Robison, and Martin Stich. "OptiX: A General Purpose Ray Tracing Engine." <em>ACM Transactions on Graphics</em>. Available at <a href="http://graphics.cs.williams.edu/papers/OptiXSIGGRAPH10/">http://graphics.cs.williams.edu/papers/OptiXSIGGRAPH10/</a>.
+</p>
+
+<p>
+[135] Emil Persson. "ATI Radeon HD 2000 Programming Guide." Available at <a href="http://developer.amd.com/media/gpu_assets/ATI_Radeon_HD_2000_programming_guide.pdf">http://developer.amd.com/media/gpu_assets/ATI_Radeon_HD_2000_programming_guide.pdf</a>, 2007.
+</p>
+
+<p>
+[136] Emil Persson. "Depth In-Depth." Available at <a href="http://developer.amd.com/media/gpu_assets/Depth_in-depth.pdf">http://developer.amd.com/media/gpu_assets/Depth_in-depth.pdf</a>, 2007.
+</p>
+
+<p>
+[137] Emil Persson. "A Couple of Notes about z." Available at <a href="http://www.humus.name/index.php?page=News&ID=255">http://www.humus.name/index.php?page=News&amp;ID=255</a>, 2009.
+</p>
+
+<p>
+[138] Emil Persson. "New Particle Trimming Tool." Available at <a href="http://www.humus.name/index.php?page=News&ID=266">http://www.humus.name/index.php?page=News&amp;ID=266</a>, 2009.
+</p>
+
+<p>
+[139] Emil Persson. "Triangulation." Available at <a href="http://www.humus.name/index.php?page=News&ID=228">http://www.humus.name/index.php?page=News&amp;ID=228</a>, 2009.
+</p>
+
+<p>
+[140] Emil Persson. "Making it Large, Beautiful, Fast, and Consistent: Lessons Learned Developing Just Cause 2." In <em>GPU Pro</em>, edited by Wolfgang Engel, pp. 571-596. Natick, MA: A K Peters, Ltd., 2010. <a href="http://www.akpeters.com/gpupro/">http://www.akpeters.com/gpupro/</a>.
+</p>
+
+<p>
+[141] Matt Pettineo. "Attack of the Depth Buffer." Available at <a href="http://mynameismjp.wordpress.com/2010/03/22/attack-of-the-depth-buffer/">http://mynameismjp.wordpress.com/2010/03/22/attack-of-the-depth-buffer/</a>, 2010.
+</p>
+
+<p>
+[142] Frank Puig Placeres. "Fast Per-Pixel Lighting with Many Lights." In <em>Game Programming Gems 6</em>, edited by Michael Dickheiser, pp. 489-499. Hingham, MA: Charles River Media, 2006.
+</p>
+
+<p>
+[143] John Ratcliff. "Texture Packing: A Code Snippet to Compute a Texture Atlas." Available at <a href="http://codesuppository.blogspot.com/2009/04/texture-packing-code-snippet-to-compute.html">http://codesuppository.blogspot.com/2009/04/texture-packing-code-snippet-to-compute.html</a>, 2009.
+</p>
+
+<p>
+[144] Ashu Rege. "Shader Model 3.0." Available at <a href="ftp://download.nvidia.com/developer/presentations/2004/GPU_Jackpot/Shader_Model_3.pdf">ftp://download.nvidia.com/developer/presentations/2004/GPU_Jackpot/Shader_Model_3.pdf</a>, 2004.
+</p>
+
+<p>
+[145] Marek Rosa. "Destructible Volumetric Terrain." In <em>GPU Pro</em>, edited by Wolfgang Engel, pp. 597-608. Natick, MA: A K Peters, Ltd., 2010. <a href="http://www.akpeters.com/gpupro/">http://www.akpeters.com/gpupro/</a>.
+</p>
+
+<p>
+[146] Jarek Rossignac and Paul Borrel. "Multi-Resolution 3D Approximations for Rendering Complex Scenes." In <em>Modeling in Computer Graphics: Methods and Applications</em>, edited by B. Falcidieno and T. Kunii, pp. 455-465. Berlin: Springer-Verlag, 1993. Available at <a href="http://www.cs.uu.nl/docs/vakken/ddm/slides/papers/rossignac.pdf">http://www.cs.uu.nl/docs/vakken/ddm/slides/papers/rossignac.pdf</a>.
+</p>
+
+<p>
+[147] Randi J. Rost, Bill Licea-Kane, Dan Ginsburg, John M. Kessenich, Barthold Lichtenbelt, Hugh Malan, and Mike Weiblen. <em>OpenGL Shading Language</em>, Third edition. Reading, MA: Addison-Wesley, 2009.
+</p>
+
+<p>
+[148] Pedro V. Sander, Diego Nehab, and Joshua Barczak. "Fast Triangle Reordering for Vertex Locality and Reduced Overdraw." <em>Proc. SIGGRAPH 07, Transactions on Graphics</em> 26:3 (2007), 1-9.
+</p>
+
+<p>
+[149] Martin Schneider and Reinhard Klein. "Efficient and Accurate Rendering of Vector Data on Virtual Landscapes." <em>Journal of WSCG 15:1-3</em> (2007), 59-64. Available at <a href="http://cg.cs.uni-bonn.de/de/publikationen/paper-details/schneider-2007-efficient/">http://cg.cs.uni-bonn.de/de/publikationen/paper-details/schneider-2007-efficient/</a>.
+</p>
+
+<p>
+[150] William J. Schroeder, Jonathan A. Zarge, and William E. Lorensen. "Decimation of Triangle Meshes." <em>Proc. SIGGRAPH</em> 92, Computer Graphics 26:2 (1992), 65-70.
+</p>
+
+<p>
+[151] Jim Scott. "Packing Lightmaps." Available at <a href="http://www.blackpawn.com/texts/lightmaps/">http://www.blackpawn.com/texts/lightmaps/</a>, 2001.
+</p>
+
+<p>
+[152] Mark Segal and Kurt Akeley. "The OpenGL Graphics System: A Specification (Version 3.3 Core Profile)." Available at <a href="http://www.opengl.org/registry/doc/glspec33.core.20100311.pdf">http://www.opengl.org/registry/doc/glspec33.core.20100311.pdf</a>, 2010.
+</p>
+
+<p>
+[153] Dean Sekulic. "Efficient Occlusion Culling." In <em>GPU Gems</em>, edited by Randima Fernando. Reading, MA: Addison-Wesley, 2004. Available at <a href="http://http.developer.nvidia.com/GPUGems/gpugems_ch29.html">http://http.developer.nvidia.com/GPUGems/gpugems_ch29.html</a>.
+</p>
+
+<p>
+[154] Jason Shankel. "Fast Heightfield Normal Calculation." In <em>Game Programming Gems 3</em>, edited by Dante Treglia. Hingham, MA: Charles River Media, 2002.
+</p>
+
+<p>
+[155] Dave Shreiner and The Khronos OpenGL ARB Working Group. <em>OpenGL Programming Guide: The Official Guide to Learning OpenGL, Versions 3.0 and 3.1.</em>, Seventh edition. Reading, MA: Addison-Wesley, 2009.
+</p>
+
+<p>
+[156] Irvin Sobel. "An Isotropic 3 x 3 Image Gradient Operator." In <em>Machine Vision for Three-Dimensional Scenes</em>, pp. 376-379. Orlando, FL: Academic Press, 1990.
+</p>
+
+<p>
+[157] Wojciech Sterna. "Porting Code between Direct3D 9 and OpenGL 2.0." In <em>GPU Pro</em>, edited by Wolfgang Engel, pp. 529-540. Natick, MA: A K Peters, Ltd., 2010. <a href="http://www.akpeters.com/gpupro/">http://www.akpeters.com/gpupro/</a>.
+</p>
+
+<p>
+[158] David Stevenson. "A Report on the Proposed IEEE Floating Point Standard (IEEE Task p754)." <em>ACM SIGARCH Computer Architecture News 8:5</em>.
+</p>
+
+<p>
+[159] Benjamin Supnik. "The Hacks of Life." Available at <a href="http://hacksoflife.blogspot.com/">http://hacksoflife.blogspot.com/</a>.
+</p>
+
+<p>
+[160] Benjamin Supnik. "OpenGL and Threads: What's Wrong." Available at <a href="http://hacksoflife.blogspot.com/2008/01/opengl-and-threads-whats-wrong.html">http://hacksoflife.blogspot.com/2008/01/opengl-and-threads-whats-wrong.html</a>, 2008.
+</p>
+
+<p>
+[161] Herb Sutter. "The Free Lunch Is Over: A Fundamental Turn toward Concurrency in Software." <em>Dr. Dobb's Journal</em> 30:3. Available at <a href="http://www.gotw.ca/publications/concurrency-ddj.htm">http://www.gotw.ca/publications/concurrency-ddj.htm</a>.
+</p>
+
+<p>
+[162] Herb Sutter. "Lock-Free Code: A False Sense of Security." <em>Dr. Dobb's Journal</em> 33:9. Available at <a href="http://drdobbs.com/cpp/210600279">http://drdobbs.com/cpp/210600279</a>.</p>
+
+<p>
+[163] Adam Szofran. "Global Terrain Technology for Flight Simulation." In <em>Game Developers Conference</em>, 2006. Available at <a href="http://www.microsoft.com/Products/Games/FSInsider/developers/Pages/GlobalTerrain.aspx">http://www.microsoft.com/Products/Games/FSInsider/developers/Pages/GlobalTerrain.aspx</a>.
+</p>
+
+<p>
+[164] Christopher C. Tanner, Christopher J. Migdal, and Michael T. Jones. "The Clipmap: a Virtual Mipmap." In <em>Proceedings of SIGGRAPH 98, Computer Graphics Proceedings, Annual Conference Series</em>, edited by Michael Cohen, pp. 151-158. Reading, MA: Addison Wesley, 1998.
+</p>
+
+<p>
+[165] Terathon Software. "C4 Engine Wiki: Editing Terrain." Available at <a href="http://www.terathon.com/wiki/index.php/Editing_Terrain">http://www.terathon.com/wiki/index.php/Editing_Terrain</a>, 2010.
+</p>
+
+<p>
+[166] Art Tevs, Ivo Ihrke, and Hans-Peter Seidel. "Maximum Mipmaps for Fast, Accurate, and Scalable Dynamic Height Field Rendering." In Symposium on Interactive 3D Graphics and Games (i3D'08), pp. 183-190, 2008. Available at <a href="http://www.tevs.eu/project_i3d08.html">http://www.tevs.eu/project_i3d08.html</a>.
+</p>
+
+<p>
+[167] Andrew Thall. "Extended-Precision Floating-Point Numbers for GPU Computation." Technical report, Alma College, 2007. Available at <a href="http://andrewthall.org/papers/">http://andrewthall.org/papers/</a>.
+</p>
+
+<p>
+[168] Nick Thibieroz. "Clever Shader Tricks." <em>Game Developers Conference</em>. Available at <a href="http://developer.amd.com/media/gpu_assets/04%20Clever%20Shader%20Tricks.pdf">http://developer.amd.com/media/gpu_assets/04%20Clever%20Shader%20Tricks.pdf</a>.
+</p>
+
+<p>
+[169] Chris Thorne. "Origin-Centric Techniques for Optimising Scalability and the Fidelity of Motion, Interaction and Rendering." Ph.D. thesis, University of Western Australia, 2007. Available at <a href="http://www.floatingorigin.com/">http://www.floatingorigin.com/</a>.
+</p>
+
+<p>
+[170] Thatcher Ulrich. "Rendering Massive Terrains Using Chunked Level of Detail Control." In <em>SIGGRAPH 2002 Super-Size It! Scaling Up to Massive Virtual Worlds Course Notes</em>. New York: ACM Press, 2002. Available at <a href="http://tulrich.com/geekstuff/sig-notes.pdf">http://tulrich.com/geekstuff/sig-notes.pdf</a>.
+</p>
+
+<p>
+[171] David A. Vallado and Wayne D. McClain. <em>Fundamentals of Astrodynamics and Applications</em>, Third edition. New York: Springer-Verlag, 2007. Available at <a href="http://celestrak.com/software/vallado-sw.asp">http://celestrak.com/software/vallado-sw.asp</a>.
+</p>
+
+<p>
+[172] J.M.P. van Waveren. "Real-Time Texture Streaming &amp; Decompression." Available at <a href="http://software.intel.com/en-us/articles/real-time-texture-streaming-decompression/">http://software.intel.com/en-us/articles/real-time-texture-streaming-decompression/</a>, 2007.
+</p>
+
+<p>
+[173] J.M.P. van Waveren. "Geospatial Texture Streaming from Slow Storage Devices." Available at <a href="http://software.intel.com/en-us/articles/geospatial-texture-streaming-from-slow-storage-devices/">http://software.intel.com/en-us/articles/geospatial-texture-streaming-from-slow-storage-devices/</a>, 2008.
+</p>
+
+<p>
+[174] J.M.P. van Waveren. "id Tech 5 Challenges: From Texture Virtualization to Massive Parallelization." In <em>SIGGRAPH</em>, 2009. Available at <a href="http://s09.idav.ucdavis.edu/talks/05-JP_id_Tech_5_Challenges.pdf">http://s09.idav.ucdavis.edu/talks/05-JP_id_Tech_5_Challenges.pdf</a>.
+</p>
+
+<p>
+[175] Gokul Varadhan and Dinesh Manocha. "Out-of-Core Rendering of Massive Geometric Environments." In <em>Proceedings of the Conference on Visualization</em> '02, pp. 69-76. Los Alamitos, CA: IEEE Computer Society, 2002.
+</p>
+
+<p>
+[176] James M. Van Verth and Lars M. Bishop. <em>Essential Mathematics for Games and Interactive Applications</em>, Second edition. San Francisco: Morgan Kaufmann, 2008.
+</p>
+
+<p>
+[177] Harald Vistnes. "GPU Terrain Rendering." In <em>Game Programming Gems 6</em>, edited by Michael Dickheiser, pp. 461-471. Hingham, MA: Charles River Media, 2006.
+</p>
+
+<p>
+[178] Ingo Wald. "Realtime Ray Tracing and Interactive Global Illumination." Ph.D. thesis, Saarland University, 2004. Available at <a href="http://www.sci.utah.edu/~wald/PhD/">http://www.sci.utah.edu/~wald/PhD/</a>.
+</p>
+
+<p>
+[179] Bill Whitacre. "Spheres Through Triangle Tessellation." Available at <a href="http://musingsofninjarat.wordpress.com/spheres-through-triangle-tessellation/">http://musingsofninjarat.wordpress.com/spheres-through-triangle-tessellation/</a>, 2008.
+</p>
+
+<p>
+[180] David R. Williams. "Moon Fact Sheet." Available at <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html">http://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html</a>, 2006.
+</p>
+
+<p>
+[181] Michael Wimmer and Jiri Bittner. "Hardware Occlusion Queries Made Useful." In <em>GPU Gems 2: Programming Techniques for High-Performance Graphics and General-Purpose Computation</em>, edited by Matt Pharr and Randima Fernando. Reading, MA: Addison-Wesley, 2005. Available at <a href="http://www.cg.tuwien.ac.at/research/publications/2005/Wimmer-2005-HOQ/">http://www.cg.tuwien.ac.at/research/publications/2005/Wimmer-2005-HOQ/</a>.
+</p>
+
+<p>
+[182] Steven Wittens. "Making Worlds: 1 - Of Spheres and Cubes." Available at <a href="http://acko.net/blog/making-worlds-part-1-of-spheres-and-cubes">http://acko.net/blog/making-worlds-part-1-of-spheres-and-cubes</a>, 2009.
+</p>
+
+<p>
+[183] Matthias Wloka. "Batch, Batch, Batch: What Does It Really Mean?" <em>Game Developers Conference</em>. Available at <a href="http://origin-developer.nvidia.com/docs/IO/8230/BatchBatchBatch.pdf?q=docs/IO/8230/BatchBatchBatch.pdf">http://origin-developer.nvidia.com/docs/IO/8230/BatchBatchBatch.pdf?q=docs/IO/8230/BatchBatchBatch.pdf</a>.
+</p>
+
+</td></tr>
+</table>
+    
+</body>    
+</html>
