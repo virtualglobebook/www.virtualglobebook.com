@@ -1,94 +1,196 @@
-<html>
-<head>
-<title>3D Engine Design for Virtual Globes</title>
-
-<link rel="stylesheet" type="text/css" href="style.css" />
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-16048240-4']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-</head>    
-
-<body>
-
-<img src="strip.png" width="630" height="95" alt="3D Engine Design for Virtual Globes Cover" />
-<table summary="" border="0" width="630">
-<tr align="center">
-  <td><a href="index.html">Home</a></td>
-  <td><a href="toc.html">TOC</a></td>
-  <td><a href="backcover.html">Back Cover</a></td>
-  <td><a href="reviews.html">Reviews</a></td>
-  <td><a href="code.html">Code</a></td>
-  <td><a href="figures.html">Figures</a></td>
-  <td><a href="bibliography.html">Bibliography</a></td>
-  <td><a href="bibtex.html">BibTeX</a></td>
-  <td><a href="errata.html">Errata</a></td>
-  <td><a href="http://blog.virtualglobebook.com/">Blog</a></td>
-</tr>
-</table>
+<html>
 
-<h1>Example Code</h1>
-<a href="https://github.com/virtualglobebook/OpenGlobe"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/abad93f42020b733148435e2cd92ce15c542d320/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub"></a>
-<table summary="" border="0" width="630">
-<tr><td>
-<p><em>Below are the instructions for obtaining and building OpenGlobe, the example virtual globe engine accompanying our book.Since publishing the book, the two authors, Patrick and Kevin, have been contributing to an awesome open source virtual globefor the web, called <a href="http://cesium.agi.com">Cesium</a>.  While OpenGlobe continues to be a great example of the ideaspresented in the book, we recommend that you take a look at Cesium as well, because it is much more sophisticated and under veryactive development.  It also runs in a web browser without a plugin, by utilizing WebGL and Javascript!</em></p><p>OpenGlobe, the example code for our book, is written in C# and OpenGL 3.3 and is availableas a zip file <a href="OpenGlobe.zip">here</a> or from <a href="http://www.github.com/AnalyticalGraphicsInc/cesium">GitHub</a> with simple build instructions:</p>
-
-<h2>Windows Build Instructions</h2>
-<em>Tested on Windows XP, Vista, and 7</em>
-<ol>
-  <li>Download and unzip the <a href="OpenGlobe.zip">code</a> (30.8 MB).</li>
-  <li>Upgrade your video card drivers [<a href="http://www.nvidia.com/Download/index.aspx">NVIDIA</a> | <a href="http://support.amd.com/us/gpudownload/Pages/index.aspx">ATI</a>].  OpenGL 3.3 is required.</li>
-  <li>If necessary, install Visual Studio 2010 or later.  The free <a href="http://www.microsoft.com/express/product/default.aspx">express edition</a> is sufficient.</li>
-  <li>Open <code>&lt;unzip path&gt;\Source\OpenGlobe.sln</code> in Visual Studio.</li>
-  <li>
-    Right click the solution in the <code>Solution Explorer</code> and click <code>Build Solution</code>.
-    <p><img src="buildWindows.png" width="360" height="432" alt="Build Solution" /></p>
-  </li>
-  <li>To run an example, right click on the project in the <code>Solution Explorer</code>, and click <code>Set as Startup Project</code>, then hit <code>F5</code>.</li>
-</ol>    
-
-<!-- 
-    TODO: Manual NVIDIA Driver install:
-    * Download driver, e.g., NVIDIA-Linux-x86_64-275.09.07.run.
-    * Log out
-    * Hit Ctrl + Alt + F1 at the login screen
-    * cd <driver download path>
-    * sudo /etc/init.d/gdm stop
-    * sudo chmod +x ./<NVIDIA-Linux-xxx.run>
-    * sudo ./<NVIDIA-Linux-xxx.run>
-    * sudo reboot 
--->
-
-
-<h2>Linux Build Instructions</h2>
-<em>Tested on Ubuntu 10.04 (Mono 2.4.4), 10.10 (Mono 2.6.7), and 11.04 (Mono 2.6.7)</em>
-<ol>
-  <li>Download and unzip the <a href="OpenGlobe.zip">code</a> (30.8 MB).</li>
-  <li>Upgrade your video card drivers [<a href="http://www.nvidia.com/Download/index.aspx">NVIDIA</a> | <a href="http://support.amd.com/us/gpudownload/Pages/index.aspx">ATI</a>].  OpenGL 3.3 is required.</li>
-  <li><em>Ubuntu 11.04 Only</em>:  <code>sudo apt-get install libx11-dev</code></li>
-  <li>If necessary, install <a href="http://monodevelop.com/">MonoDevelop</a> 2.4 or later:  <code>sudo apt-get install monodevelop</code></li>
-  <li>Open <code>&lt;unzip path&gt;/Source/OpenGlobe.sln</code> in MonoDevelop.</li>
-  <li>
-    Right click the solution, and click <code>Build OpenGlobe</code>.
-    <p><img src="buildLinux.png" width="494" height="432" alt="Build Solution" /></p>
-  </li>
-  <li>To run an example, right click on the project and click <code>Run Item</code>.</li>
-</ol>    
-
-Also check out OpenGlobe on <a href="https://github.com/virtualglobebook/OpenGlobe">GitHub</a>.
-
-</td></tr>
-</table>
-
-</body>    
-</html>
+<head>
+
+<title>3D Engine Design for Virtual Globes</title>
+
+
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+
+<script type="text/javascript">
+
+
+
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-16048240-4']);
+
+  _gaq.push(['_trackPageview']);
+
+
+
+  (function() {
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+  })();
+
+
+
+</script>
+
+</head>    
+
+
+
+<body>
+
+
+
+<img src="strip.png" width="630" height="95" alt="3D Engine Design for Virtual Globes Cover" />
+
+<table summary="" border="0" width="630">
+
+<tr align="center">
+
+  <td><a href="index.html">Home</a></td>
+
+  <td><a href="toc.html">TOC</a></td>
+
+  <td><a href="backcover.html">Back Cover</a></td>
+
+  <td><a href="reviews.html">Reviews</a></td>
+
+  <td><a href="code.html">Code</a></td>
+
+  <td><a href="figures.html">Figures</a></td>
+
+  <td><a href="bibliography.html">Bibliography</a></td>
+
+  <td><a href="bibtex.html">BibTeX</a></td>
+
+  <td><a href="errata.html">Errata</a></td>
+
+  <td><a href="http://blog.virtualglobebook.com/">Blog</a></td>
+
+</tr>
+
+</table>
+
+
+<h1>Example Code</h1>
+
+<a href="https://github.com/virtualglobebook/OpenGlobe"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/abad93f42020b733148435e2cd92ce15c542d320/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub"></a>
+
+<table summary="" border="0" width="630">
+
+<tr><td>
+
+<p><em>
+Below are the instructions for obtaining and building OpenGlobe, the example virtual globe engine accompanying our book.
+Since publishing the book, the two authors, Patrick and Kevin, have been contributing to an awesome open source virtual globe
+for the web, called <a href="https://cesium.com">Cesium</a>.  While OpenGlobe continues to be a great example of the ideas
+presented in the book, we recommend that you take a look at Cesium as well, because it is much more sophisticated and under very
+active development.  It also runs in a web browser without a plugin, by utilizing WebGL and Javascript!
+</em></p>
+
+<p>OpenGlobe, the example code for our book, is written in C# and OpenGL 3.3 and is available
+as a zip file <a href="OpenGlobe.zip">here</a> or from <a href="https://github.com/virtualglobebook/OpenGlobe">GitHub</a> with simple build instructions:</p>
+
+
+
+<h2>Windows Build Instructions</h2>
+
+<em>Tested on Windows XP, Vista, and 7</em>
+
+<ol>
+
+  <li>Download and unzip the <a href="OpenGlobe.zip">code</a> (30.8 MB).</li>
+
+  <li>Upgrade your video card drivers [<a href="https://www.nvidia.com/Download/index.aspx">NVIDIA</a> | <a href="https://support.amd.com/us/gpudownload/Pages/index.aspx">ATI</a>].  OpenGL 3.3 is required.</li>
+
+  <li>If necessary, install Visual Studio 2010 or later.  The free <a href="https://www.microsoft.com/express/product/default.aspx">express edition</a> is sufficient.</li>
+
+  <li>Open <code>&lt;unzip path&gt;\Source\OpenGlobe.sln</code> in Visual Studio.</li>
+
+  <li>
+
+    Right click the solution in the <code>Solution Explorer</code> and click <code>Build Solution</code>.
+
+    <p><img src="buildWindows.png" width="360" height="432" alt="Build Solution" /></p>
+
+  </li>
+
+  <li>To run an example, right click on the project in the <code>Solution Explorer</code>, and click <code>Set as Startup Project</code>, then hit <code>F5</code>.</li>
+
+</ol>    
+
+
+
+<!-- 
+
+    TODO: Manual NVIDIA Driver install:
+
+    * Download driver, e.g., NVIDIA-Linux-x86_64-275.09.07.run.
+
+    * Log out
+
+    * Hit Ctrl + Alt + F1 at the login screen
+
+    * cd <driver download path>
+
+    * sudo /etc/init.d/gdm stop
+
+    * sudo chmod +x ./<NVIDIA-Linux-xxx.run>
+
+    * sudo ./<NVIDIA-Linux-xxx.run>
+
+    * sudo reboot 
+
+-->
+
+
+
+
+
+<h2>Linux Build Instructions</h2>
+
+<em>Tested on Ubuntu 10.04 (Mono 2.4.4), 10.10 (Mono 2.6.7), and 11.04 (Mono 2.6.7)</em>
+
+<ol>
+
+  <li>Download and unzip the <a href="OpenGlobe.zip">code</a> (30.8 MB).</li>
+
+  <li>Upgrade your video card drivers [<a href="https://www.nvidia.com/Download/index.aspx">NVIDIA</a> | <a href="https://support.amd.com/us/gpudownload/Pages/index.aspx">ATI</a>].  OpenGL 3.3 is required.</li>
+
+  <li><em>Ubuntu 11.04 Only</em>:  <code>sudo apt-get install libx11-dev</code></li>
+
+  <li>If necessary, install <a href="https://monodevelop.com/">MonoDevelop</a> 2.4 or later:  <code>sudo apt-get install monodevelop</code></li>
+
+  <li>Open <code>&lt;unzip path&gt;/Source/OpenGlobe.sln</code> in MonoDevelop.</li>
+
+  <li>
+
+    Right click the solution, and click <code>Build OpenGlobe</code>.
+
+    <p><img src="buildLinux.png" width="494" height="432" alt="Build Solution" /></p>
+
+  </li>
+
+  <li>To run an example, right click on the project and click <code>Run Item</code>.</li>
+
+</ol>    
+
+
+
+Also check out OpenGlobe on <a href="https://github.com/virtualglobebook/OpenGlobe">GitHub</a>.
+
+
+
+</td></tr>
+
+</table>
+
+
+
+</body>    
+
+</html>
+
